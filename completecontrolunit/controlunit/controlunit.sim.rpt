@@ -1,0 +1,253 @@
+Simulator report for controlunit
+Thu Oct 12 15:37:35 2017
+Quartus II Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 54 nodes     ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 0            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
+; Device                      ; EP1C12F324C8 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 54           ;
+; Total output ports checked                          ; 40           ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 40           ;
+; Total output ports with no 1-value coverage         ; 40           ;
+; Total output ports with no 0-value coverage         ; 40           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                             ;
++--------------------------------+----------------------------------+------------------+
+; Node Name                      ; Output Port Name                 ; Output Port Type ;
++--------------------------------+----------------------------------+------------------+
+; |controlunit|mux1selout        ; |controlunit|mux1selout          ; padio            ;
+; |controlunit|mux2selout[0]     ; |controlunit|mux2selout[0]       ; padio            ;
+; |controlunit|mux2selout[1]     ; |controlunit|mux2selout[1]       ; padio            ;
+; |controlunit|aluinselout       ; |controlunit|aluinselout         ; padio            ;
+; |controlunit|controlout[0]     ; |controlunit|controlout[0]       ; padio            ;
+; |controlunit|controlout[1]     ; |controlunit|controlout[1]       ; padio            ;
+; |controlunit|controlout[2]     ; |controlunit|controlout[2]       ; padio            ;
+; |controlunit|controlout[3]     ; |controlunit|controlout[3]       ; padio            ;
+; |controlunit|controlout[4]     ; |controlunit|controlout[4]       ; padio            ;
+; |controlunit|controlout[5]     ; |controlunit|controlout[5]       ; padio            ;
+; |controlunit|controlout[6]     ; |controlunit|controlout[6]       ; padio            ;
+; |controlunit|controlout[7]     ; |controlunit|controlout[7]       ; padio            ;
+; |controlunit|accloadout        ; |controlunit|accloadout          ; padio            ;
+; |controlunit|memwriteout       ; |controlunit|memwriteout         ; padio            ;
+; |controlunit|memaddressout[0]  ; |controlunit|memaddressout[0]    ; padio            ;
+; |controlunit|memaddressout[1]  ; |controlunit|memaddressout[1]    ; padio            ;
+; |controlunit|memaddressout[2]  ; |controlunit|memaddressout[2]    ; padio            ;
+; |controlunit|memaddressout[3]  ; |controlunit|memaddressout[3]    ; padio            ;
+; |controlunit|memaddressout[4]  ; |controlunit|memaddressout[4]    ; padio            ;
+; |controlunit|memaddressout[5]  ; |controlunit|memaddressout[5]    ; padio            ;
+; |controlunit|memaddressout[6]  ; |controlunit|memaddressout[6]    ; padio            ;
+; |controlunit|memaddressout[7]  ; |controlunit|memaddressout[7]    ; padio            ;
+; |controlunit|memaddressout[8]  ; |controlunit|memaddressout[8]    ; padio            ;
+; |controlunit|memaddressout[9]  ; |controlunit|memaddressout[9]    ; padio            ;
+; |controlunit|memaddressout[10] ; |controlunit|memaddressout[10]   ; padio            ;
+; |controlunit|memaddressout[11] ; |controlunit|memaddressout[11]   ; padio            ;
+; |controlunit|memaddressout[12] ; |controlunit|memaddressout[12]   ; padio            ;
+; |controlunit|memaddressout[13] ; |controlunit|memaddressout[13]   ; padio            ;
+; |controlunit|memaddressout[14] ; |controlunit|memaddressout[14]   ; padio            ;
+; |controlunit|memaddressout[15] ; |controlunit|memaddressout[15]   ; padio            ;
+; |controlunit|opcodeout[0]      ; |controlunit|opcodeout[0]        ; padio            ;
+; |controlunit|opcodeout[1]      ; |controlunit|opcodeout[1]        ; padio            ;
+; |controlunit|opcodeout[2]      ; |controlunit|opcodeout[2]        ; padio            ;
+; |controlunit|opcodeout[3]      ; |controlunit|opcodeout[3]        ; padio            ;
+; |controlunit|opcodeout[4]      ; |controlunit|opcodeout[4]        ; padio            ;
+; |controlunit|instrmem[8]       ; |controlunit|instrmem[8]~corein  ; combout          ;
+; |controlunit|instrmem[9]       ; |controlunit|instrmem[9]~corein  ; combout          ;
+; |controlunit|instrmem[10]      ; |controlunit|instrmem[10]~corein ; combout          ;
+; |controlunit|instrmem[11]      ; |controlunit|instrmem[11]~corein ; combout          ;
+; |controlunit|instrmem[15]      ; |controlunit|instrmem[15]~corein ; combout          ;
++--------------------------------+----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                             ;
++--------------------------------+----------------------------------+------------------+
+; Node Name                      ; Output Port Name                 ; Output Port Type ;
++--------------------------------+----------------------------------+------------------+
+; |controlunit|mux1selout        ; |controlunit|mux1selout          ; padio            ;
+; |controlunit|mux2selout[0]     ; |controlunit|mux2selout[0]       ; padio            ;
+; |controlunit|mux2selout[1]     ; |controlunit|mux2selout[1]       ; padio            ;
+; |controlunit|aluinselout       ; |controlunit|aluinselout         ; padio            ;
+; |controlunit|controlout[0]     ; |controlunit|controlout[0]       ; padio            ;
+; |controlunit|controlout[1]     ; |controlunit|controlout[1]       ; padio            ;
+; |controlunit|controlout[2]     ; |controlunit|controlout[2]       ; padio            ;
+; |controlunit|controlout[3]     ; |controlunit|controlout[3]       ; padio            ;
+; |controlunit|controlout[4]     ; |controlunit|controlout[4]       ; padio            ;
+; |controlunit|controlout[5]     ; |controlunit|controlout[5]       ; padio            ;
+; |controlunit|controlout[6]     ; |controlunit|controlout[6]       ; padio            ;
+; |controlunit|controlout[7]     ; |controlunit|controlout[7]       ; padio            ;
+; |controlunit|accloadout        ; |controlunit|accloadout          ; padio            ;
+; |controlunit|memwriteout       ; |controlunit|memwriteout         ; padio            ;
+; |controlunit|memaddressout[0]  ; |controlunit|memaddressout[0]    ; padio            ;
+; |controlunit|memaddressout[1]  ; |controlunit|memaddressout[1]    ; padio            ;
+; |controlunit|memaddressout[2]  ; |controlunit|memaddressout[2]    ; padio            ;
+; |controlunit|memaddressout[3]  ; |controlunit|memaddressout[3]    ; padio            ;
+; |controlunit|memaddressout[4]  ; |controlunit|memaddressout[4]    ; padio            ;
+; |controlunit|memaddressout[5]  ; |controlunit|memaddressout[5]    ; padio            ;
+; |controlunit|memaddressout[6]  ; |controlunit|memaddressout[6]    ; padio            ;
+; |controlunit|memaddressout[7]  ; |controlunit|memaddressout[7]    ; padio            ;
+; |controlunit|memaddressout[8]  ; |controlunit|memaddressout[8]    ; padio            ;
+; |controlunit|memaddressout[9]  ; |controlunit|memaddressout[9]    ; padio            ;
+; |controlunit|memaddressout[10] ; |controlunit|memaddressout[10]   ; padio            ;
+; |controlunit|memaddressout[11] ; |controlunit|memaddressout[11]   ; padio            ;
+; |controlunit|memaddressout[12] ; |controlunit|memaddressout[12]   ; padio            ;
+; |controlunit|memaddressout[13] ; |controlunit|memaddressout[13]   ; padio            ;
+; |controlunit|memaddressout[14] ; |controlunit|memaddressout[14]   ; padio            ;
+; |controlunit|memaddressout[15] ; |controlunit|memaddressout[15]   ; padio            ;
+; |controlunit|opcodeout[0]      ; |controlunit|opcodeout[0]        ; padio            ;
+; |controlunit|opcodeout[1]      ; |controlunit|opcodeout[1]        ; padio            ;
+; |controlunit|opcodeout[2]      ; |controlunit|opcodeout[2]        ; padio            ;
+; |controlunit|opcodeout[3]      ; |controlunit|opcodeout[3]        ; padio            ;
+; |controlunit|opcodeout[4]      ; |controlunit|opcodeout[4]        ; padio            ;
+; |controlunit|instrmem[8]       ; |controlunit|instrmem[8]~corein  ; combout          ;
+; |controlunit|instrmem[9]       ; |controlunit|instrmem[9]~corein  ; combout          ;
+; |controlunit|instrmem[10]      ; |controlunit|instrmem[10]~corein ; combout          ;
+; |controlunit|instrmem[11]      ; |controlunit|instrmem[11]~corein ; combout          ;
+; |controlunit|instrmem[15]      ; |controlunit|instrmem[15]~corein ; combout          ;
++--------------------------------+----------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+    Info: Copyright (C) 1991-2010 Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, Altera MegaCore Function License 
+    Info: Agreement, or other applicable license agreement, including, 
+    Info: without limitation, that your use is for the sole purpose of 
+    Info: programming logic devices manufactured by Altera and sold by 
+    Info: Altera or its authorized distributors.  Please refer to the 
+    Info: applicable agreement for further details.
+    Info: Processing started: Thu Oct 12 15:37:35 2017
+Info: Command: quartus_sim controlunit.vwf
+Info: Using vector source file "C:/Users/Administrator/Documents/controlunit/controlunit.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       0.00 %
+Info: Number of transitions in simulation is 0
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 165 megabytes
+    Info: Processing ended: Thu Oct 12 15:37:35 2017
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+
